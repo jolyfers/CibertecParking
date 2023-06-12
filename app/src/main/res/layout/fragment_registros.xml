@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,13 +23,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Mis registros de Ingreso / Salida"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
+                android:text="Mis registros de Ingreso / Salida"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
                 android:textSize="18dp"
-                android:textColor="@color/azuloscuro">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,6 +46,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
+                        android:layout_marginVertical="4dp"
+                        android:outlineAmbientShadowColor="@color/darkblue"
                         app:cardCornerRadius="10dp">
 
                         <LinearLayout
@@ -56,10 +58,10 @@
                             <ImageView
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
+                                android:layout_marginStart="10dp"
                                 android:src="@drawable/round_search_24"
-                                android:tint="@color/azuloscuro"
-                                tools:ignore="UseAppTint"
-                                android:layout_marginStart="10dp"/>
+                                android:tint="@color/darkblue"
+                                tools:ignore="UseAppTint" />
 
 
                             <TextView
@@ -72,10 +74,10 @@
                             <ImageView
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
+                                android:layout_marginEnd="10dp"
                                 android:src="@drawable/round_mic_24"
-                                android:tint="@color/azuloscuro"
-                                tools:ignore="UseAppTint"
-                                android:layout_marginEnd="10dp"/>
+                                android:tint="@color/darkblue"
+                                tools:ignore="UseAppTint" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -104,23 +106,23 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            >
+                            android:layout_weight="1">
+
                             <ImageView
                                 android:layout_width="25dp"
                                 android:layout_height="25dp"
+                                android:layout_marginStart="10dp"
                                 android:src="@drawable/round_grid_view_24"
-                                android:tint="@color/azuloscuro"
-                                tools:ignore="UseAppTint"
-                                android:layout_marginStart="10dp"/>
+                                android:tint="@color/darkblue"
+                                tools:ignore="UseAppTint" />
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:gravity="end"
-                            >
+                            android:gravity="end">
 
                             <Spinner
                                 android:layout_width="wrap_content"
@@ -144,22 +146,20 @@
                 android:orientation="vertical">
 
 
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_gravity="center"
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="10dp">
+                        android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
@@ -191,19 +191,17 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        >
+                                        android:layout_weight="1">
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginStart="5dp"
+                                            android:layout_marginBottom="5dp"
                                             android:text="BYJ-022"
                                             android:textColor="@color/black"
                                             android:textSize="16dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:textStyle="bold">
-                                        </TextView>
+                                            android:textStyle="bold"></TextView>
                                     </LinearLayout>
 
                                     <LinearLayout
@@ -282,12 +280,13 @@
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="10dp">
+                        android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
@@ -319,19 +318,17 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        >
+                                        android:layout_weight="1">
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginStart="5dp"
+                                            android:layout_marginBottom="5dp"
                                             android:text="BYJ-022"
                                             android:textColor="@color/black"
                                             android:textSize="16dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:textStyle="bold">
-                                        </TextView>
+                                            android:textStyle="bold"></TextView>
                                     </LinearLayout>
 
                                     <LinearLayout
@@ -413,26 +410,20 @@
 
                 </LinearLayout>
 
-                <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/fragmentContainerView2"
-                    android:name="com.jramirez.estacionamiento.fragment_registros"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_gravity="center"
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="10dp">
+                        android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
@@ -464,19 +455,17 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        >
+                                        android:layout_weight="1">
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginStart="5dp"
+                                            android:layout_marginBottom="5dp"
                                             android:text="BYJ-022"
                                             android:textColor="@color/black"
                                             android:textSize="16dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:textStyle="bold">
-                                        </TextView>
+                                            android:textStyle="bold"></TextView>
                                     </LinearLayout>
 
                                     <LinearLayout
@@ -488,7 +477,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:src="@drawable/round_schedule_24"
-                                            app:tint="@color/red"  />
+                                            app:tint="@color/red" />
 
                                     </LinearLayout>
 
@@ -555,12 +544,13 @@
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="10dp">
+                        android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
@@ -592,19 +582,17 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        >
+                                        android:layout_weight="1">
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginStart="5dp"
+                                            android:layout_marginBottom="5dp"
                                             android:text="BYJ-022"
                                             android:textColor="@color/black"
                                             android:textSize="16dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:textStyle="bold">
-                                        </TextView>
+                                            android:textStyle="bold"></TextView>
                                     </LinearLayout>
 
                                     <LinearLayout
@@ -689,17 +677,17 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:layout_gravity="center"
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="10dp">
+                        android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
@@ -731,19 +719,17 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        >
+                                        android:layout_weight="1">
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginStart="5dp"
+                                            android:layout_marginBottom="5dp"
                                             android:text="BYJ-022"
                                             android:textColor="@color/black"
                                             android:textSize="16dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:textStyle="bold">
-                                        </TextView>
+                                            android:textStyle="bold"></TextView>
                                     </LinearLayout>
 
                                     <LinearLayout
@@ -822,12 +808,13 @@
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="10dp">
+                        android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
@@ -859,19 +846,17 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        >
+                                        android:layout_weight="1">
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_marginStart="5dp"
+                                            android:layout_marginBottom="5dp"
                                             android:text="BYJ-022"
                                             android:textColor="@color/black"
                                             android:textSize="16dp"
-                                            android:layout_marginBottom="5dp"
-                                            android:textStyle="bold">
-                                        </TextView>
+                                            android:textStyle="bold"></TextView>
                                     </LinearLayout>
 
                                     <LinearLayout
